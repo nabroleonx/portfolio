@@ -6,25 +6,25 @@ const products = [
     name: 'Google IT Support',
     color: 'by Google',
     href: '#',
-    imageSrc: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~ZFUPSKPR5ZQE/CERTIFICATE_LANDING_PAGE~ZFUPSKPR5ZQE.jpeg',
+    imageSrc: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~5DF9AVY29D5F/CERTIFICATE_LANDING_PAGE~5DF9AVY29D5F.jpeg',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
     price: '$140',
   },
   {
     id: 1,
-    name: 'The Complete Full-Stack JavaScript Course!',
-    color: 'by Joseph Delgadillo /Udemy/',
+    name: 'Zip Tote Basket',
+    color: 'White and black',
     href: '#',
-    imageSrc: 'https://udemy-certificate.s3.amazonaws.com/image/UC-be2d5c01-c625-496b-b39a-28f2d0df0e93.jpg?v=1633264899000',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
     price: '$140',
   },
   {
     id: 1,
-    name: 'Automate the Boring Stuff with Python Programming',
-    color: 'by Al Sweigart /Udemy/',
+    name: 'Zip Tote Basket',
+    color: 'White and black',
     href: '#',
-    imageSrc: 'https://udemy-certificate.s3.amazonaws.com/image/UC-5f63e86c-331f-4ca2-b5da-5166bc5d2cce.jpg?v=1617624321000',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
     price: '$140',
   },
@@ -74,6 +74,15 @@ export default function Certifications() {
                   <LinkIcon className="w-5 h-5" aria-hidden="true" />
                 </a></div>
                 </div>
+              </div>
+              <div className="mt-6">
+                <a
+                  href={product.href}
+                  className="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200"
+                >
+                  <LinkIcon className="w-5 h-5 text-gray-400" aria-hidden="true" />
+                  <span className="ml-3">See Credential</span>
+                </a>
               </div>
             </div>
           ))}
