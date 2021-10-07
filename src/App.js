@@ -1,19 +1,3 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import { Fragment, useState } from "react";
 import { Dialog, Transition, Tab } from "@headlessui/react";
 import {
@@ -92,7 +76,7 @@ export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   let [categories] = useState({
-    About: <About />,
+    About: null,
     Projects: <Projects />,
     Certifications: <Certifications />,
   });
