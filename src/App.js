@@ -76,7 +76,7 @@ export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   let [categories] = useState({
-    About: null,
+    About: <About />,
     Projects: <Projects />,
     Certifications: <Certifications />,
   });
@@ -107,30 +107,33 @@ export default function App() {
                     </div>
                     <div className="mt-6 sm:flex-1 sm:min-w-0 sm:flex sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
                       <div className="sm:hidden 2xl:block mt-6 min-w-0 flex-1">
-                        
-              <p className="text-xl drop-shadow-lg font-medium text-gray-900">Abel Gashaw</p>
-              <p className="text-sm text-gray-500 truncate">Software Engineer</p>
+                        <p className="text-xl drop-shadow-lg font-medium text-gray-900">
+                          Abel Gashaw
+                        </p>
+                        <p className="text-sm text-gray-500 truncate">
+                          Software Engineer
+                        </p>
                       </div>
-                      <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
+                      <div className="overflow-hidden mt-6 flex justify-stretch flex-row space-x-4">
                         <button
                           type="button"
-                          className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                          className="inline-flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
                         >
                           <MailIcon
-                            className="-ml-1 mr-2 h-5 w-5 text-gray-400"
+                            className="-ml-1 md:mr-2 h-5 w-5 text-gray-400"
                             aria-hidden="true"
                           />
-                          <span>Message</span>
+                          <span className="hidden md:block">Email</span>
                         </button>
                         <button
                           type="button"
                           className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
                         >
                           <PhoneIcon
-                            className="-ml-1 mr-2 h-5 w-5 text-gray-400"
+                            className="-ml-1 md:mr-2 h-5 w-5 text-gray-400"
                             aria-hidden="true"
                           />
-                          <span>Call</span>
+                          <span className="hidden md:block">Call</span>
                         </button>
                         <button
                           type="button"
@@ -138,7 +141,7 @@ export default function App() {
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="-ml-1 mr-2 h-5 w-5 text-gray-400"
+                            className="-ml-1 md:mr-2 h-5 w-5 text-gray-400"
                             viewBox="0 0 172 172"
                           >
                             <g
@@ -170,7 +173,7 @@ export default function App() {
                               </g>
                             </g>
                           </svg>
-                          <span>Linkedin</span>
+                          <span className="hidden md:block">Linkedin</span>
                         </button>
                         <button
                           type="button"
@@ -178,7 +181,7 @@ export default function App() {
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="-ml-1 mr-2 h-5 w-5 text-gray-400"
+                            className="-ml-1 md:mr-2 h-5 w-5 text-gray-400"
                             viewBox="0 0 172 172"
                           >
                             <g
@@ -203,7 +206,7 @@ export default function App() {
                               </g>
                             </g>
                           </svg>
-                          <span>Twitter</span>
+                          <span className="hidden md:block">Twitter</span>
                         </button>
                         <button
                           type="button"
@@ -211,7 +214,7 @@ export default function App() {
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="-ml-1 mr-2 h-5 w-5 text-gray-400"
+                            className="-ml-1 md:mr-2 h-5 w-5 text-gray-400"
                             viewBox="0 0 172 172"
                           >
                             <g
@@ -236,7 +239,7 @@ export default function App() {
                               </g>
                             </g>
                           </svg>
-                          <span>Github</span>
+                          <span className="hidden md:block">Github</span>
                         </button>
                       </div>
                     </div>
