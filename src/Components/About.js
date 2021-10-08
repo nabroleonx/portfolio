@@ -8,11 +8,11 @@ const profile = {
     "https://images.unsplash.com/photo-1444628838545-ac4016a5418a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
   about: `
     <p>Hello there, I am Abel. I am a software developer based in Ethiopia. I currently enrolled as a third year Software Engineering student Bahir Dar Institute of Technology.</p>
-    <p>I was born and raised in a rural area. However, I have always been fascinated with technology. I love maths and physics. When I was a kid, I was always tinkering with broken radios and other gadgets in our house. My family and other people who knew me used to say, he is going to be an engineer one day.
+    <p>I was born and raised in a rural area. However, I have always been fascinated with technology. I love maths and physics. When I was a kid, I was always tinkering with broken radios and other gadgets in our house. My family used to say I am going to be an engineer one day.
     I believe that played a large role to where I am now. I didn't have a phone let alone a computer for almost my entire adulthood. Despite all of that, my curiousty was fueling my passion for technology day after day.</p>
   <p>I remember the first time I touched a computer. A guy who used to live in our compound was learning his MSc and his brother sent him a PC for his thesis. I used to sit with him and watch how it all works. I was a quick learner and quite an experimenter so I end up helping him navigate things.
   </p>
-  <p>One day I was watching a show called "Tech-Talk with Solomon" and lucky for me the guest was Prof. Jelani Nelson. I remember him explaning binary seach algorithms using the famous phone book analogy, and then I was hooked. It was like a revelation for me. From that day on, I took his pc when he was not using it and started teaching myself some HTML. That was when I was in grade 9.</p>
+  <p>One day I was watching a show called "Tech-Talk with Solomon" and lucky for me the guest was Prof. Jelani Nelson. I remember him explaning binary seach algorithms using the famous phone book analogy, and then I was hooked. It was like a revelation for me. I was in grade 9 then. From that day on, I took his pc when he was not using it and started teaching myself some HTML.</p>
   <p>Currently, I am working as web developer in different projects. I am also working on a website which is hopefully going to be a good start-up.</p>  
   `,
 };
@@ -189,59 +189,64 @@ const skillSet = {
 export default function About() {
   return (
     <>
-      <dl className="grid grid-cols-1 gap-x-16 gap-y-8 sm:grid-cols-12">
-        <div className="sm:col-span-8">
+      <dl className="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-12">
+        <div className="md:col-span-8">
           <dt className="text-sm font-medium text-gray-500">About</dt>
           <dd
             className="mt-1 max-w-full text-justify text-sm text-gray-900 space-y-5"
             dangerouslySetInnerHTML={{ __html: profile.about }}
           />
         </div>
-        <div className="sm:col-span-4 pt-8 px-4 text-center text-sm font-medium bg-blue-50 text-gray-500">
-          <div className="mt-3 flex items-center">
-            <p className="text-gray-900 mx-auto">Skills</p>
-            <hr className="bg-gray-400" />
-          </div>
+        <div className="md:col-span-4 pt-8 px-4 text-center text-sm font-medium">
+          <div className="py-4 px-4 bg-teal-50 text-gray-500">
+            <div className="mt-3 flex items-center">
+              <p className="text-gray-900 mx-auto">Skills</p>
+              <hr className="bg-gray-400" />
+            </div>
 
-          <div className="mt-6">
-            <dl className="space-y-3">
-              {skillSet.counts.map((count) => (
-                <div key={count.skill} className="flex items-center text-sm">
-                  <dt className="flex-1 flex items-center">
-                    <p className="w-20 font-medium text-gray-900">
-                      {count.skill}
-                    </p>
-                    <div
-                      aria-hidden="true"
-                      className="ml-1 flex-1 flex items-center"
-                    >
-                      <div className="ml-3 relative flex-1">
-                        <div className="h-1 bg-gray-100 border border-gray-200 rounded-full" />
-                        {count.count > 0 ? (
-                          <div
-                            className="absolute inset-y-0 bg-blue-300 border border-blue-300 rounded-full"
-                            style={{
-                              width: `calc(${count.count} / ${skillSet.totalCount} * 100%)`,
-                            }}
-                          />
-                        ) : null}
+            <div className="mt-6">
+              <dl className="space-y-3">
+                {skillSet.counts.map((count) => (
+                  <div key={count.skill} className="flex items-center text-sm">
+                    <dt className="flex-1 flex items-center">
+                      <p className="w-20 font-medium text-gray-900">
+                        {count.skill}
+                      </p>
+                      <div
+                        aria-hidden="true"
+                        className="ml-1 flex-1 flex items-center"
+                      >
+                        <div className="ml-3 relative flex-1">
+                          <div className="h-1 bg-gray-100 border border-gray-200 rounded-full" />
+                          {count.count > 0 ? (
+                            <div
+                              className="absolute inset-y-0 bg-blue-300 border border-blue-300 rounded-full"
+                              style={{
+                                width: `calc(${count.count} / ${skillSet.totalCount} * 100%)`,
+                              }}
+                            />
+                          ) : null}
+                        </div>
                       </div>
-                    </div>
-                  </dt>
-                </div>
-              ))}
-            </dl>
+                    </dt>
+                  </div>
+                ))}
+              </dl>
+            </div>
           </div>
-
-          <div className="mt-12 flex items-center">
-            <p className="mr-2">My Resume</p>
-
-            <button
-              type="button"
-              className="inline-flex justify-center items-center px-1 py-1 shadow-sm text-sm font-medium rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
-            >
-              <LinkIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-            </button>
+          <div className="mt-6 items-center">
+            <a href="https://resume.io/r/hgV6u9vTW">
+              <button
+                type="button"
+                className="w-full inline-flex justify-center items-center px-10 py-2 text-gray-500 shadow-sm text-sm font-medium rounded-md border hover:text-white hover:bg-teal-400"
+              >
+                <p className="mr-1">Resume</p>
+                <LinkIcon
+                  className="h-5 w-5"
+                  aria-hidden="true"
+                />
+              </button>
+            </a>
           </div>
         </div>
       </dl>

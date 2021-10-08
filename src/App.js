@@ -58,9 +58,10 @@ export default function App() {
                         </p>
                       </div>
                       <div className="overflow-hidden mt-6 flex justify-stretch flex-row space-x-4">
+                        <a href="mailto:abbygshw@gmail.com">
                         <button
                           type="button"
-                          className="inline-flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                          className="inline-flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
                         >
                           <MailIcon
                             className="-ml-1 md:mr-2 h-5 w-5 text-gray-400"
@@ -68,9 +69,11 @@ export default function App() {
                           />
                           <span className="hidden md:block">Email</span>
                         </button>
+                        </a>
+                        <a href="tel:+251922006222">
                         <button
                           type="button"
-                          className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                          className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
                         >
                           <PhoneIcon
                             className="-ml-1 md:mr-2 h-5 w-5 text-gray-400"
@@ -78,9 +81,11 @@ export default function App() {
                           />
                           <span className="hidden md:block">Call</span>
                         </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abel-ayalew-a564b7210/">
                         <button
                           type="button"
-                          className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                          className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -118,9 +123,11 @@ export default function App() {
                           </svg>
                           <span className="hidden md:block">Linkedin</span>
                         </button>
+                        </a>
+                        <a href="https://twitter.com/nabroleonx">
                         <button
                           type="button"
-                          className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                          className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -151,9 +158,11 @@ export default function App() {
                           </svg>
                           <span className="hidden md:block">Twitter</span>
                         </button>
+                        </a>
+                        <a href="https://github.com/nabroleonx">
                         <button
                           type="button"
-                          className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                          className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -184,6 +193,7 @@ export default function App() {
                           </svg>
                           <span className="hidden md:block">Github</span>
                         </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -209,7 +219,7 @@ export default function App() {
                                 "focus:outline-none",
                                 selected
                                   ? "border-teal-400 border-b text-teal-500"
-                                  : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
+                                  : "border-transparent text-gray-500 hover:border-blue-300 hover:text-gray-700 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
                               )
                             }
                           >
