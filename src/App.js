@@ -1,57 +1,19 @@
-import { Fragment, useState } from "react";
-import { Dialog, Transition, Tab } from "@headlessui/react";
+import { useState } from "react";
+import { Tab } from "@headlessui/react";
 import {
-  CalendarIcon,
-  CogIcon,
-  HomeIcon,
-  MapIcon,
-  MenuIcon,
-  SearchCircleIcon,
-  SpeakerphoneIcon,
-  UserGroupIcon,
-  ViewGridAddIcon,
-  XIcon,
-} from "@heroicons/react/outline";
-import {
-  ChevronLeftIcon,
-  FilterIcon,
   MailIcon,
   PhoneIcon,
-  SearchIcon,
 } from "@heroicons/react/solid";
 import Projects from "./Components/Projects";
 import Certifications from "./Components/Certifications";
 import About from "./Components/About";
-import Review from "./Components/Review";
 
-const user = {
-  name: "Tom Cook",
-  imageUrl:
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-};
-const navigation = [
-  { name: "Dashboard", href: "#", icon: HomeIcon, current: false },
-  { name: "Calendar", href: "#", icon: CalendarIcon, current: false },
-  { name: "Teams", href: "#", icon: UserGroupIcon, current: false },
-  { name: "Directory", href: "#", icon: SearchCircleIcon, current: true },
-  { name: "Announcements", href: "#", icon: SpeakerphoneIcon, current: false },
-  { name: "Office Map", href: "#", icon: MapIcon, current: false },
-];
-const secondaryNavigation = [
-  { name: "Apps", href: "#", icon: ViewGridAddIcon },
-  { name: "Settings", href: "#", icon: CogIcon },
-];
-const tabs = [
-  { name: "Profile", href: "#", current: true },
-  { name: "Calendar", href: "#", current: false },
-  { name: "Recognition", href: "#", current: false },
-];
 const profile = {
   name: "Abel Ayalew",
   imageUrl:
-    "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    "https://media-exp1.licdn.com/dms/image/C4E03AQF0S6xsZlypPA/profile-displayphoto-shrink_100_100/0/1625307791185?e=1639008000&v=beta&t=K5jNCxmu6wsB-hIT-AjXXlM1wj02218NzvAiuNvGyLg",
   coverImageUrl:
-    "https://images.unsplash.com/photo-1444628838545-ac4016a5418a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    "https://media-exp1.licdn.com/dms/image/C4E16AQFB0O55b6XEnQ/profile-displaybackgroundimage-shrink_350_1400/0/1630188225203?e=1639008000&v=beta&t=kU3xbAEKrVHXgxSFQoA6A_Zgpnn6Mxp0-_Tgq-9poWU",
   about: `
     <p>Tincidunt quam neque in cursus viverra orci, dapibus nec tristique. Nullam ut sit dolor consectetur urna, dui cras nec sed. Cursus risus congue arcu aenean posuere aliquam.</p>
     <p>Et vivamus lorem pulvinar nascetur non. Pulvinar a sed platea rhoncus ac mauris amet. Urna, sem pretium sit pretium urna, senectus vitae. Scelerisque fermentum, cursus felis dui suspendisse velit pharetra. Augue et duis cursus maecenas eget quam lectus. Accumsan vitae nascetur pharetra rhoncus praesent dictum risus suspendisse.</p>
@@ -73,10 +35,9 @@ function classNames(...classes) {
 }
 
 export default function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   let [categories] = useState({
-    About: <About />,
+    About: null,
     Projects: <Projects />,
     Certifications: <Certifications />,
   });
@@ -87,11 +48,10 @@ export default function App() {
         <div className="flex-1 relative z-0 flex overflow-hidden">
           <main className="flex-1 relative z-0 overflow-y-auto focus:outline-none xl:order-last">
             <article>
-              {/* Profile header */}
               <div>
                 <div>
                   <img
-                    className="h-32 w-full object-cover lg:h-32"
+                    className="h-32 w-full object-fill lg:h-32"
                     src={profile.coverImageUrl}
                     alt=""
                   />
