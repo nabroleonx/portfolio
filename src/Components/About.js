@@ -7,7 +7,7 @@ const profile = {
   coverImageUrl:
     "https://images.unsplash.com/photo-1444628838545-ac4016a5418a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
   about: `
-    <p>Hello there, I am Abel. I am a software developer based in Ethiopia. I currently enrolled as a third year Software Engineering student Bahir Dar Institute of Technology.</p>
+    <p>Hello there, I am Abel. I am a software developer based in Ethiopia. I am currently enrolled as a second year Software Engineering student Bahir Dar Institute of Technology.</p>
     <p>I was born and raised in a rural area. However, I have always been fascinated with technology. I love maths and physics. When I was a kid, I was always tinkering with broken radios and other gadgets in our house. My family used to say I am going to be an engineer one day.
     I believe that played a large role to where I am now. I didn't have a phone let alone a computer for almost my entire adulthood. Despite all of that, my curiousty was fueling my passion for technology day after day.</p>
   <p>I remember the first time I touched a computer. A guy who used to live in our compound was learning his MSc and his brother sent him a PC for his thesis. I used to sit with him and watch how it all works. I was a quick learner and quite an experimenter so I end up helping him navigate things.
