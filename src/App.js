@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { Tab } from "@headlessui/react";
-import {
-  MailIcon,
-  PhoneIcon,
-} from "@heroicons/react/solid";
+import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
 import Projects from "./Components/Projects";
 import Certifications from "./Components/Certifications";
 import About from "./Components/About";
+import Review from "./Components/Review";
 
 const profile = {
   name: "Abel Ayalew",
@@ -14,20 +12,6 @@ const profile = {
     "https://media-exp1.licdn.com/dms/image/C4E03AQF0S6xsZlypPA/profile-displayphoto-shrink_100_100/0/1625307791185?e=1639008000&v=beta&t=K5jNCxmu6wsB-hIT-AjXXlM1wj02218NzvAiuNvGyLg",
   coverImageUrl:
     "https://media-exp1.licdn.com/dms/image/C4E16AQFB0O55b6XEnQ/profile-displaybackgroundimage-shrink_350_1400/0/1630188225203?e=1639008000&v=beta&t=kU3xbAEKrVHXgxSFQoA6A_Zgpnn6Mxp0-_Tgq-9poWU",
-  about: `
-    <p>Tincidunt quam neque in cursus viverra orci, dapibus nec tristique. Nullam ut sit dolor consectetur urna, dui cras nec sed. Cursus risus congue arcu aenean posuere aliquam.</p>
-    <p>Et vivamus lorem pulvinar nascetur non. Pulvinar a sed platea rhoncus ac mauris amet. Urna, sem pretium sit pretium urna, senectus vitae. Scelerisque fermentum, cursus felis dui suspendisse velit pharetra. Augue et duis cursus maecenas eget quam lectus. Accumsan vitae nascetur pharetra rhoncus praesent dictum risus suspendisse.</p>
-  `,
-  fields: {
-    Phone: "(555) 123-4567",
-    Email: "ricardocooper@example.com",
-    Title: "Senior Front-End Developer",
-    Team: "Product Development",
-    Location: "San Francisco",
-    Sits: "Oasis, 4th floor",
-    Salary: "$145,000",
-    Birthday: "June 8, 1990",
-  },
 };
 
 function classNames(...classes) {
@@ -35,9 +19,8 @@ function classNames(...classes) {
 }
 
 export default function App() {
-
   let [categories] = useState({
-    About: null,
+    About: <About />,
     Projects: <Projects />,
     Certifications: <Certifications />,
   });

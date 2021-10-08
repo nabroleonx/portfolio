@@ -5,40 +5,34 @@ const products = [
     id: 1,
     name: 'Google IT Support',
     color: 'by Google',
-    href: '#',
+    href: 'https://www.coursera.org/account/accomplishments/professional-cert/ZFUPSKPR5ZQE',
     imageSrc: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~ZFUPSKPR5ZQE/CERTIFICATE_LANDING_PAGE~ZFUPSKPR5ZQE.jpeg',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$140',
   },
   {
     id: 1,
     name: 'The Complete Full-Stack JavaScript Course!',
     color: 'by Joseph Delgadillo /Udemy/',
-    href: '#',
+    href: 'https://www.udemy.com/certificate/UC-be2d5c01-c625-496b-b39a-28f2d0df0e93/',
     imageSrc: 'https://udemy-certificate.s3.amazonaws.com/image/UC-be2d5c01-c625-496b-b39a-28f2d0df0e93.jpg?v=1633264899000',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$140',
   },
   {
     id: 1,
     name: 'Automate the Boring Stuff with Python Programming',
     color: 'by Al Sweigart /Udemy/',
-    href: '#',
+    href: 'https://www.udemy.com/certificate/UC-5f63e86c-331f-4ca2-b5da-5166bc5d2cce/',
     imageSrc: 'https://udemy-certificate.s3.amazonaws.com/image/UC-5f63e86c-331f-4ca2-b5da-5166bc5d2cce.jpg?v=1617624321000',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$140',
   },
   {
     id: 1,
     name: 'AI for Everyone',
     color: 'by DeepLearnin.AI',
-    href: '#',
+    href: 'https://www.coursera.org/account/accomplishments/verify/GB5RDEBTXBHG',
     imageSrc: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~GB5RDEBTXBHG/CERTIFICATE_LANDING_PAGE~GB5RDEBTXBHG.jpeg',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$140',
   },
-  
-  // More products...
 ]
 
 export default function Certifications() {
